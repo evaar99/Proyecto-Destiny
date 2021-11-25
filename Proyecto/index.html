@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title> DESTINY </title>
+        <style> 
+            body {
+            height: 650px;
+            background-image: url("fotos/portada2.jpg");
+            background-size: cover;
+            background-repeat:no-repeat;
+            background-position: center center;} 
+        </style>
+          <!--CSS de la foto de fondo-->
+    </head>
+
+    <body style="text-align: center;font-family: Verdana, Geneva, Tahoma, sans-serif;">
+        <header>
+            <h1> ¡Bienvenido a Destiny! &#x1f4d6; </h1>
+            <h2> Tú decides tu final... &#x23f3;</h2>
+        </header>
+
+        <main>
+            <form action="Pag1.html">
+                <!--Asignar el style a cada etiqueta por si queremos cambiar algún estilo en un momento determinado.-->
+                <fieldset>
+                    <legend><h3> Introduce tus datos antes de iniciar el juego.</h3></legend>
+                    <label for="nom"><b> Nombre:</b></label><br>
+                    <input type="text" id="nom" name="nom" placeholder="Nombre" ><br><br>
+                    
+                    <label for="fnaci"><b> Fecha de nacimiento:</b></label><br>
+                    <input type="date" id="fnaci" name="fnaci"><br><br>
+
+                    <label for="cp"><b> Código postal:</b></label><br>
+                    <input type="number" id="cp" name="cp" placeholder="12345" min="0" max="99999"><br><br>
+
+                    <label for="email"><b> E-mail:</b></label><br>
+                    <input type="email" id="email" name="email" placeholder="escribe@tuemail.com" required><br><br>
+
+                    <!--Estos datos personales nos permitirán conocer el 'perfil' de cliente que juega y de donde es.-->
+                </fieldset>
+
+                <label for="info"><b> ¿Desea recibir información y notificaciones de nuevas hsitorias?</b></label><br>
+                <input type="radio" id="info" name="decision" value="si">
+                <label for="info">SI</label>
+                <input type="radio" id="info2" name="decision" value="no">
+                <label for="info2">NO</label><br>
+
+                <input type="submit" value="Enviar">
+            </form>
+
+        </main>
+
+        <footer style="text-align: right; text-align: center;  position: absolute; bottom: 0; width: 100%;"> Creado por Eva Adamuz Renau Fecha de inicio:09/11/2021</footer>
+
+    </body>
+
+</html>
